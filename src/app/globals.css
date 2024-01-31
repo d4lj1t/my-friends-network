@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+header {
+    margin: 1rem;
+}
+
+.heading1 {
+  font-size: 3rem;
+}
+
+.heading2 {
+  font-size: 1.5rem;
+}
+
+.sharedButton, .primaryButton, .secondaryButton {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    padding: 0.7rem;
+}
+
+.primaryButton {
+    background: dimgray;
+    color: white;
+}
+
+.secondaryButton {
+    background: white;
+    color: black;
+}

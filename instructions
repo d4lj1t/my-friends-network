@@ -1,0 +1,11 @@
+Login using Auth0, create new account, which can be anything and is not vierified, or log in using google/facebook, as your browser shlud remember these credentials and log you in without abny sign up
+
+you land on the page with People and friends, you can add however you please, and your friends will show in My Friends Click
+
+and ive also added a network chart which shows your immediate friends and thier friend connections
+
+ive commited the env file so theres no need to setup any env variables
+
+npm i
+npm run dev
+

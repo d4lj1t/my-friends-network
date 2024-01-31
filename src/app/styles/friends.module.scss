@@ -1,0 +1,87 @@
+.outerContainer {
+  padding: 1rem;
+}
+
+.cardsContainer {
+  margin-top: 2rem;
+}
+
+.pageHeading {
+  color: dimgrey;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.personCard, .friendCard {
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  color: grey;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  section {
+    display: block;
+    margin-bottom: 1rem;
+
+    div {
+      color: black;
+    }
+  }
+}
+
+.personCard {
+  background: lightgray;
+
+  div {
+    background: lightgray;
+  }
+}
+
+.friendCard {
+  background: white;
+  flex: fit-content;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  div {
+    background: white;
+  }
+}
+
+.friendsContainer {
+  @media (min-width: theme('screens.md')) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.buttonContainer {
+  text-align: right;
+}
+
+.updated {
+  background: white;
+
+  section div {
+    background: white;
+  }
+}
+
+.pagination {
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    cursor: pointer
+  }
+
+  .active {
+    color: blue;
+    font-weight: 800;
+  }
+}
